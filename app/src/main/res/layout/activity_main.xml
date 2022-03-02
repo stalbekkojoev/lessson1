@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/registr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/registr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:text="REGISTER"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:hint="UserName      Trivia"
+        android:padding="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@color/seryi"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Email"
+        android:padding="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@color/seryi"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Password"
+        android:padding="10dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@color/seryi"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
+        android:backgroundTint="@color/seryi"
+        android:id="@+id/month_navigation_next"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:text="NEXT"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/trivia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="Trivia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
